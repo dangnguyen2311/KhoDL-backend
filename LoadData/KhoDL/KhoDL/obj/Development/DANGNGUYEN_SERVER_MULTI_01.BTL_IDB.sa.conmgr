@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DANGNGUYEN_SERVER_MULTI_01.BTL_IDB.sa"
+  DTS:DTSID="{2E6E78E2-DAA6-4816-B112-ABAD7B55215F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DANGNGUYEN\SERVER_MULTI_01;User ID=sa;Initial Catalog=BTL_IDB;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-KhoDL-{2E6E78E2-DAA6-4816-B112-ABAD7B55215F}DANGNGUYEN\SERVER_MULTI_01.BTL_IDB.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOSP+XWj/8kWH02AwdnWw4wAAAAACAAAAAAAQZgAAAAEAACAAAAC0+0eyaV9/FdCopNfb0mLRVYPpWpBqOhZBkDeWvbmxCwAAAAAOgAAAAAIAACAAAAA+Pj5s4zCcG91KnPHEm937y+AVatKWQ47I/2j/GMAvHnAAAAD1llyM2Wd9tg29ifcGn1ZdRFvJ5+DQ14GMARvU1i9k57W89I7axiR1H2chBSqIrX03+yzQ+T67lQuw2A6lGpKstNVSemiZGCo94PypkjOI0JNyep5MWNZJ0mCsBkrpwGAOzl6zn0MywcOAz3FzjGWfQAAAAJH6r3IYeeqzB2QfA+2ggP0PdGcHk+I6UbjZEBKr9HU5ET4cCJWylEbH4MRmbAiVKl12W5gV1ozRuBOADdeOn38=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -132,7 +132,6 @@ public class DatHangController : ControllerBase
                     ORDER BY 
                         Thang;
 
-
                 ";
 
                 using (var cmd = new SqlCommand(sqlQuery, conn))
@@ -273,6 +272,49 @@ public class DatHangController : ControllerBase
                         {
                             bang = reader[0]?.ToString(), // [Dim Dia Chi].[Bang]
                             tongTien = reader.IsDBNull(1) ? 0 : Convert.ToDecimal(reader[1]) // [Measures].[Tongtien]
+                        });
+                    }
+
+                    return Ok(result);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Chi tiết lỗi: " + ex.ToString());
+            return StatusCode(500, "Lỗi: " + ex.Message);
+        }
+    }
+
+    [HttpGet("thanhpho-tongtien")]
+    public IActionResult GetTongTienByThanhPho()
+    {
+        try
+        {
+            using (var conn = new AdomdConnection(_connectionString))
+            {
+                conn.Open();
+
+                string mdxQuery = @"
+                    SELECT 
+                        NON EMPTY {[Measures].[Tongtien]} ON COLUMNS,
+                        [Dim Dia Chi].[Hierarchy].[Ten TP].MEMBERS ON ROWS
+                    FROM [4D_DatHang]
+                ";
+
+                using (var cmd = new AdomdCommand(mdxQuery, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    var result = new List<object>();
+                    while (reader.Read())
+                    {
+                        var col0 = reader[0]?.ToString();
+                        var col1 = reader[1]?.ToString();
+                        Console.WriteLine($"DEBUG: col0 = {col0}, col1 = {col1}");
+                        result.Add(new
+                        {
+                            tenTP = reader[0]?.ToString(), // [Dim Dia Chi].[Hierarchy].[Ten TP]
+                            tongTien = reader.ToString() // [Measures].[Tongtien]
                         });
                     }
 

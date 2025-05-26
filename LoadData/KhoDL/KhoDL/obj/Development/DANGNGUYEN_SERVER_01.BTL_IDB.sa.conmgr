@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DANGNGUYEN_SERVER_01.BTL_IDB.sa"
+  DTS:DTSID="{6D0115DC-773E-41D1-8481-7DC8A14E0FE7}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DANGNGUYEN\SERVER_01;User ID=sa;Initial Catalog=BTL_IDB;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-KhoDL-{6D0115DC-773E-41D1-8481-7DC8A14E0FE7}DANGNGUYEN\SERVER_01.BTL_IDB.sa;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

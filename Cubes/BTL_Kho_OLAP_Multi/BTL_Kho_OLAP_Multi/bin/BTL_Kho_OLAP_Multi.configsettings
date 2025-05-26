@@ -1,0 +1,115 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>BTL Kho</ID>
+        <ConnectionString>Provider=SQLOLEDB.1;Data Source=DANGNGUYEN\SERVER_MULTI_01;Persist Security Info=True;Password=;User ID=;Initial Catalog=BTL_Kho</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Mat Hang</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Cua Hang</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Thoi Gian</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Khach Hang</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Dia Chi</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>3D_HangNhap</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Hang Nhap</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Hang Nhap</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>2D_HangNhap_MH_CH</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Hang Nhap Mat Hang Cua Hang</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Hang Nhap Mat Hang Cua Hang</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>2D_HangNhap_MH_TG</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Hang Nhap Mat Hang Thoi Gian</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Hang Nhap Mat Hang Thoi Gian</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>4D_DatHang</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Dat Hang</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Dat Hang</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>3D_DatHang_MH_KH_TG</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Dat Hang Mat Hang Khach Hang Thoi Gian</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Dat Hang Mat Hang Khach Hang Thoi Gian</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>3D_DatHang_MH_TP_TG</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Dat Hang Mat Hang Thanh Pho Thoi Gian</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Dat Hang Mat Hang Thanh Pho Thoi Gian</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

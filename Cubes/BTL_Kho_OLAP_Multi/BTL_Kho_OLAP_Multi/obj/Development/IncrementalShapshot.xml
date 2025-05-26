@@ -1,0 +1,124 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>BTL_Kho_OLAP_Multi</Database>
+    <Server>DANGNGUYEN\SERVER_MULTI_01</Server>
+    <ConnectionString>Data Source=DANGNGUYEN\SERVER_MULTI_01;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>dtHmFcgWZt8alb/3LC0UhWscge4=16-May-25 15:24:4402-May-25 17:50:19</TimeStamp>
+        <ID>
+          <String>BTL Kho</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>AzQWh9szKLCX/y/cQhEc26oxQaM=18-May-25 11:45:2318-May-25 11:45:22</TimeStamp>
+        <ID>
+          <String>BTL Kho OLAP View</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>K2W99MqC80cT/0yXsr+EASSQfuE=18-May-25 11:46:4618-May-25 11:46:46</TimeStamp>
+        <ID>
+          <String>Dim Mat Hang</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dkLRLnc0fVlm8dUTsxDNlD2x96M=18-May-25 22:17:5918-May-25 11:46:46</TimeStamp>
+        <ID>
+          <String>Dim Cua Hang</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aY0u2eeBZMhAQO/X00FoP0Y3Fng=18-May-25 14:11:5218-May-25 11:46:46</TimeStamp>
+        <ID>
+          <String>Dim Thoi Gian</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QDKgu0qc19J2VFOASe7P16hJLyo=18-May-25 12:04:4118-May-25 11:47:55</TimeStamp>
+        <ID>
+          <String>Dim Khach Hang</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SfO4XLdAzE4euBhShxC3Gt0qQWE=18-May-25 11:52:4318-May-25 11:50:17</TimeStamp>
+        <ID>
+          <String>Dim Dia Chi</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5jAxkVqhEGC5DKUszNMh7ihFjgU=18-May-25 22:17:5918-May-25 11:46:46o19s1liNz0Udr6KLNwQjRNQqflk=18-May-25 11:46:4618-May-25 11:46:46</TimeStamp>
+        <ID>
+          <String>3D_HangNhap</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>s1xRz+ncALNF/Tn377P3wYf0YM4=18-May-25 22:17:5918-May-25 11:47:0949B/pCAomMiYPbipCEqaLDyzyOY=18-May-25 11:47:0918-May-25 11:47:09</TimeStamp>
+        <ID>
+          <String>2D_HangNhap_MH_CH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>NpdpKCJt9waM8nIilL8FrJrGsQw=18-May-25 14:11:5218-May-25 11:47:3724cYVYrIZ0zaj4HIQwQ8PLtInfg=18-May-25 11:47:3718-May-25 11:47:37</TimeStamp>
+        <ID>
+          <String>2D_HangNhap_MH_TG</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>+XdVSy5kIU9+OdNo0QeWVrtY2bg=18-May-25 14:11:5218-May-25 11:51:01RzD/uD4tE54bNK07zXYTRFryXr8=18-May-25 11:51:0118-May-25 11:51:01</TimeStamp>
+        <ID>
+          <String>4D_DatHang</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>PFxvwvzD305q/SZEkQro/mknYvs=18-May-25 14:11:5218-May-25 11:51:30EmVQG+dkRhNHxT8Jre7gsTIixd4=18-May-25 11:51:3018-May-25 11:51:30</TimeStamp>
+        <ID>
+          <String>3D_DatHang_MH_KH_TG</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>yUz3n1UcyeGID+9tejcK84WizBU=18-May-25 14:11:5218-May-25 11:51:54vK2WR9Nrp7OrS9MW5bIzI+ntaB4=18-May-25 11:51:5418-May-25 11:51:54</TimeStamp>
+        <ID>
+          <String>3D_DatHang_MH_TP_TG</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>W6SpfK9Y5j2/3CW6t1xTNWLPwDo=02-May-25 17:49:0002-May-25 17:48:59</TimeStamp>
+      <ID>
+        <String>BTL_Kho_OLAP_Multi</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-05-18T15:18:19.14Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "BTL_Kho_OLAP_Multi", "BTL_Kho_OLAP_Multi\BTL_Kho_OLAP_Multi.dwproj", "{9A193B2C-D993-431E-9753-8F19F73894BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A193B2C-D993-431E-9753-8F19F73894BC}.Development|Default.ActiveCfg = Development
+		{9A193B2C-D993-431E-9753-8F19F73894BC}.Development|Default.Build.0 = Development
+		{9A193B2C-D993-431E-9753-8F19F73894BC}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3792B906-1C3E-4D76-A5A8-924D5405396E}
+	EndGlobalSection
+EndGlobal
